@@ -3,8 +3,9 @@ from aiogram import Bot
 from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
 
-admins = []
 
+admins = []
 TOKEN = getenv("BOT_TOKEN")
 
-bot = Bot(token=TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
+bot = Bot(token=TOKEN,
+          default=DefaultBotProperties(parse_mode=ParseMode.HTML))
