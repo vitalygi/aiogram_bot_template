@@ -6,5 +6,10 @@ services:
     image: mongo
     volumes:
       - mongodbdata:/data/db
+  redis:
+    image: redis
+    restart: always
+    volumes:
+      - ./redis_data:/data
 volumes:
   mongodbdata:
