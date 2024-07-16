@@ -8,7 +8,7 @@ router = Router()
 
 @router.message(Command('start'))
 async def handle_start(message: Message):
-    await message.answer('it is bot template Bye')
+    await message.answer('it is bot template just test')
 
 
 @router.message(Command('bye'))
